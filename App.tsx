@@ -6,10 +6,10 @@
  */
 
 import React from 'react';
-import { Image } from './src/Components/Image/Image';
+import ImageTest from './src/Components/Image/Image';
 
 const App = () => {
-  return (<Image></Image>)
+  return (<ImageTest></ImageTest>)
 }
 
 export default App;

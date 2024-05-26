@@ -1,21 +1,23 @@
 import React from 'react';
-import { ImageBackground, StyleSheet } from 'react-native';
-import ImageShared from './Image.shared';
+import { Image, StyleSheet } from 'react-native';
+import { ImageShared } from './Image.shared';
 
 const AndroidLogo = () => {
     return (
-        <ImageBackground source={require('assets/logos/128px-Android_logo_green.svg.png')} />
+        <Image source={{ uri: "https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" }} style={styles.image} />
     );
 };
 
 
 const ImageAndroid: React.FC = (props) => {
-    return <ImageShared style={styles.iosBackground} {...props} ><AndroidLogo></AndroidLogo></ImageShared>;
+    return <ImageShared {...props} ><AndroidLogo></AndroidLogo></ImageShared>;
 };
 
 const styles = StyleSheet.create({
-    iosBackground: {
-        backgroundColor: '#add8e6',
+    image: {
+        width: 100,
+        height: 100,
+        resizeMode: 'contain',
     },
 });
 

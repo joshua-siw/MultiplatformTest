@@ -6,7 +6,7 @@ type ImageProps = {
     style?: object;
 };
 
-const ImageShared: React.FC<ImageProps> = ({ children, style }) => {
+export const ImageShared: React.FC<ImageProps> = ({ children, style }) => {
     return (
         <View style={[styles.container, style]}>
             {children}
@@ -22,5 +22,3 @@ const styles = StyleSheet.create({
         backgroundColor: '#f0f0f0',
     },
 });
-
-export default ImageShared;
